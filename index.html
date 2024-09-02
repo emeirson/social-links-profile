@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social links profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "grey-700": "hsl(0, 0%, 20%)",
+              "grey-800": "hsl(0, 0%, 12%)",
+              "grey-900": "hsl(0, 0%, 8%)",
+              "green": "hsl(75, 94%, 57%)",
+            },
+            fontFamily: {
+              inter: "Inter",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="flex justify-center items-center h-screen bg-black/95 font-inter"
+  >
+    <section class="bg-grey-800 text-white max-w-xs w-full p-6 rounded-xl space-y-6">
+      <div class="space-y-4 flex flex-col items-center">
+        <div class="rounded-full overflow-hidden h-20 w-20">
+          <img src="/assets/images/avatar-jessica.jpeg" alt="" />
+        </div>
+        <div class="text-center">
+          <h1 class="font-bold text-xl">Jessica Randall</h1>
+          <h3 class="text-green text-xs font-semibold">London, United Kingdom</h3>
+        </div>
+        <p class="text-xs font-light text-gray-300">"Front-end developer and avid reader."</p>
+      </div>
+      <div class="flex flex-col items-center space-y-3">
+        <a class="w-full text-center text-sm font-semibold bg-grey-700 rounded-lg py-3 hover:bg-green hover:text-black" href="https://github.com/"
+          >GitHub</a
+        >
+        <a class="w-full text-center text-sm font-semibold bg-grey-700 rounded-lg py-3 hover:bg-green hover:text-black" href="https://www.frontendmentor.io/"
+          >Frontend Mentor</a
+        >
+        <a class="w-full text-center text-sm font-semibold bg-grey-700 rounded-lg py-3 hover:bg-green hover:text-black" href="https://www.linkedin.com/"
+          >LinkedIn</a
+        >
+        <a class="w-full text-center text-sm font-semibold bg-grey-700 rounded-lg py-3 hover:bg-green hover:text-black" href="https://x.com/"
+          >Twitter</a
+        >
+        <a class="w-full text-center text-sm font-semibold bg-grey-700 rounded-lg py-3 hover:bg-green hover:text-black" href="https://www.instagram.com/"
+          >Instagram</a
+        >
+      </div>
+    </section>
+  </body>
+</html>
